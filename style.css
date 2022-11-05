@@ -66,6 +66,9 @@ header{
 
 
 .card {
+    
+    animation: appear .6s forwards; 
+    
     padding: 32px 23px;
     text-align: center;
     width: 278px;
@@ -73,6 +76,9 @@ header{
     background: var(--card-bg-color);
     border-bottom: 5px solid var(--card-color-primary);
     border-radius: 6px;
+     /* animaões */
+      
+     opacity: 0;
     
 }
 
@@ -93,8 +99,7 @@ header{
 
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 30px;
-    
+    font-size: 30px; 
 }
 
 .card h2 span{
@@ -141,11 +146,6 @@ header{
 .card ul li strong,
 .card ul li img{
     transition: transform .25s; 
-}
-
-.card{
-    /* animaões */
-    animation: appear .9s, forwards;  
 }
 
 @keyframes appear {
